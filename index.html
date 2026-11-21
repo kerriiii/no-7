@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uganda National IT Skills Assessment 2026</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+
+  <!-- (a) Header -->
+  <header class="site-header">
+    <img src="images/courtofarms.webp" alt="Uganda Coat of Arms" style="max-width:80px;">
+    <h1>National Information Technology Authority — Uganda</h1>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="survey-banner.jpg" alt="Uganda National IT Skills Assessment banner">
+    <h2 class="banner-title">Uganda National IT Skills Assessment 2026</h2>
+  </section>
+
+  <!-- Progress indicator -->
+  <nav class="progress" aria-label="Survey progress">
+    <ol>
+      <li class="step current" aria-current="step"><span class="step-number">1</span><span class="step-label">Step 1 — Respondent Details</span></li>
+      <li class="step"><span class="step-number">2</span><span class="step-label">Step 2 — Skills Assessment</span></li>
+      <li class="step"><span class="step-number">3</span><span class="step-label">Step 3 — Submit</span></li>
+    </ol>
+  </nav>
+
+  <main class="container">
+    <form action="#" method="post">
+
+      <!-- (b) Respondent Details -->
+      <fieldset>
+        <legend>Respondent Details</legend>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <select id="title" name="title">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required minlength="4">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="\+256[0-9]{9}" placeholder="+256700000000" title="Format: +256 followed by 9 digits">
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+          <span class="group-label" id="gender-label">Gender</span>
+          <div class="option-group" role="radiogroup" aria-labelledby="gender-label">
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="region">Region</label>
+          <select id="region" name="region">
+            <option value="Central">Central</option>
+            <option value="Eastern">Eastern</option>
+            <option value="Northern">Northern</option>
+            <option value="Western">Western</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <span class="group-label" id="category-label">Respondent Category</span>
+          <div class="option-group" role="radiogroup" aria-labelledby="category-label">
+            <label><input type="radio" name="category" value="ICT Professional"> ICT Professional</label>
+            <label><input type="radio" name="category" value="Government Officer"> Government Officer</label>
+            <label><input type="radio" name="category" value="Student"> Student</label>
+          </div>
+        </div>
+      </fieldset>
+
+    </form>
+  </main>
+
+</body>
+</html>
